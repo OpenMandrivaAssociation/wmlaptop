@@ -12,7 +12,7 @@ URL:		http://wmlaptop.sourceforge.net/
 License:	GPL
 Group:		Graphical desktop/WindowMaker
 BuildRoot:	%{_tmppath}/%{name}-buildroot
-BuildRequires:	XFree86-devel ImageMagick libxpm-devel libxpm4
+BuildRequires:	X11-devel ImageMagick libxpm-devel libxpm4
 
 %description
 wmlaptop is a WindowMaker dockapp able to satisfy any requirements of a linux
