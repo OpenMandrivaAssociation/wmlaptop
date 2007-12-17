@@ -11,7 +11,6 @@ Source:		%{name}-%{version}.tar.bz2
 URL:		http://wmlaptop.sourceforge.net/
 License:	GPL
 Group:		Graphical desktop/WindowMaker
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	X11-devel ImageMagick libxpm-devel libxpm4
 
 %description
