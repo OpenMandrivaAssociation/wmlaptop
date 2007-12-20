@@ -48,9 +48,15 @@ mkdir -p $RPM_BUILD_ROOT/%_bindir
 install -m 4755 src/%name $RPM_BUILD_ROOT/%_bindir/
 
 #menu
-mkdir -p $RPM_BUILD_ROOT%{_menudir}
-cat << EOF > $RPM_BUILD_ROOT%{_menudir}/%{name}
-?package(%{name}): command="%{name}" icon="%{name}.png" needs="x11" title="WMLaptop" longtitle="Laptop status docklet" section="System/Monitoring"
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications/
+cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
+[Desktop Entry]
+Type=Application
+Exec=%{name}
+Icon=%{name}
+Name=WMLaptop
+Comment=Laptop status docklet
+Categories=System;Monitor;
 EOF
 
 #icons
@@ -74,7 +80,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %doc AUTHORS BUGS CHANGELOG README* THANKS
 %{_bindir}/%name
-%{_menudir}/%name
+%{_datadir}/applications/mandriva-%name.desktop
 %{_liconsdir}/%name.png
 %{_iconsdir}/%name.png
 %{_miconsdir}/%name.png
