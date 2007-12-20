@@ -11,7 +11,7 @@ Source:		%{name}-%{version}.tar.bz2
 URL:		http://wmlaptop.sourceforge.net/
 License:	GPL
 Group:		Graphical desktop/WindowMaker
-BuildRequires:	X11-devel ImageMagick libxpm-devel libxpm4
+BuildRequires:	X11-devel ImageMagick xpm-devel
 
 %description
 wmlaptop is a WindowMaker dockapp able to satisfy any requirements of a linux
