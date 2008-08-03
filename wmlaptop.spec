@@ -1,6 +1,6 @@
 %define name	wmlaptop
 %define version	1.4
-%define release %mkrel 5
+%define release %mkrel 6
 
 Name: 	 	%{name}
 Summary: 	Laptop info docklet for WindowMaker
