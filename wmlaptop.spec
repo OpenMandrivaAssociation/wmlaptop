@@ -1,6 +1,6 @@
 %define name	wmlaptop
 %define version	1.4
-%define release %mkrel 7
+%define release %mkrel 8
 
 Name: 	 	%{name}
 Summary: 	Laptop info docklet for WindowMaker
@@ -12,7 +12,10 @@ URL:		http://wmlaptop.sourceforge.net/
 License:	GPL
 Group:		Graphical desktop/WindowMaker
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires:	X11-devel imagemagick xpm-devel
+BuildRequires:	libx11-devel
+BuildRequires:	libxext-devel
+BuildRequires:	libxpm-devel
+BuildRequires:	imagemagick
 
 %description
 wmlaptop is a WindowMaker dockapp able to satisfy any requirements of a linux
