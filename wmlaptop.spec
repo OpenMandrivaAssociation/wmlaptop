@@ -93,3 +93,49 @@ rm -rf $RPM_BUILD_ROOT
 %{_iconsdir}/%name.png
 %{_miconsdir}/%name.png
 
+
+
+%changelog
+* Tue Feb 01 2011 Funda Wang <fwang@mandriva.org> 1.4-8mdv2011.0
++ Revision: 634818
+- simplify BR
+
+* Wed Sep 09 2009 Thierry Vignaud <tv@mandriva.org> 1.4-7mdv2010.0
++ Revision: 434873
+- rebuild
+
+  + Oden Eriksson <oeriksson@mandriva.com>
+    - lowercase ImageMagick
+
+* Sun Aug 03 2008 Thierry Vignaud <tv@mandriva.org> 1.4-6mdv2009.0
++ Revision: 262056
+- rebuild
+
+* Wed Jul 30 2008 Thierry Vignaud <tv@mandriva.org> 1.4-5mdv2009.0
++ Revision: 256202
+- rebuild
+- fix no-buildroot-tag
+
+  + Pixel <pixel@mandriva.com>
+    - rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
+
+* Thu Dec 20 2007 Thierry Vignaud <tv@mandriva.org> 1.4-3mdv2008.1
++ Revision: 135790
+- auto-convert XDG menu entry
+- fix xpm-devel BR on x86_64
+- kill re-definition of %%buildroot on Pixel's request
+- buildrequires X11-devel instead of XFree86-devel
+- use %%mkrel
+- import wmlaptop
+
+
+* Fri Apr 14 2006 Udo Rader <udo.rader@bestsolution.at> 1.4-2mdk
+- added libxpm* as buildreq in order to hopefully fix x86_64 build 
+  problems
+
+* Wed Apr 05 2005 Udo Rader <udo.rader@bestsolution.at> 1.4-1mdk
+- new upstream version
+- made it suid root in order to allow writing to /sys/... files
+
+* Mon Jun 7 2004 Austin Acton <austin@mandrake.org> 1.3-1mdk
+- initial package
