@@ -1,6 +1,6 @@
 %define name	wmlaptop
 %define version	1.4
-%define release %mkrel 8
+%define release  9
 
 Name: 	 	%{name}
 Summary: 	Laptop info docklet for WindowMaker
@@ -11,7 +11,6 @@ Source:		%{name}-%{version}.tar.bz2
 URL:		http://wmlaptop.sourceforge.net/
 License:	GPL
 Group:		Graphical desktop/WindowMaker
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xext)
 BuildRequires:	pkgconfig(xpm)
