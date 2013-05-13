@@ -12,9 +12,9 @@ URL:		http://wmlaptop.sourceforge.net/
 License:	GPL
 Group:		Graphical desktop/WindowMaker
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires:	libx11-devel
-BuildRequires:	libxext-devel
-BuildRequires:	libxpm-devel
+BuildRequires:	pkgconfig(x11)
+BuildRequires:	pkgconfig(xext)
+BuildRequires:	pkgconfig(xpm)
 BuildRequires:	imagemagick
 
 %description
