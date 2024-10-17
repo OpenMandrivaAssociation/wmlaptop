@@ -8,7 +8,7 @@ Version: 	%{version}
 Release: 	%{release}
 
 Source:		%{name}-%{version}.tar.bz2
-URL:		http://wmlaptop.sourceforge.net/
+URL:		https://wmlaptop.sourceforge.net/
 License:	GPL
 Group:		Graphical desktop/WindowMaker
 BuildRequires:	pkgconfig(x11)
